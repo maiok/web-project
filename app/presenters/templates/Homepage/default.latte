@@ -2,7 +2,7 @@
 
 {block content}
 <div id="banner">
-	<h1 n:block=title>Congratulations!</h1>
+	<h1 n:block=title>Elasticsearch!</h1>
 </div>
 
 <div id="content">
@@ -14,11 +14,20 @@
 	<a href="https://pla.nette.org">tutorials</a> and <a href="https://forum.nette.org">forum</a>.</p>
 
 	<h2>We hope you enjoy Nette!</h2>
+
+	<ul>
+		<li>
+			<a n:href="createIndex!" data-ajax-off="history">Create index</a>
+		</li>
+		<li>
+			<a n:href="removeIndex!" data-ajax-off="history">Remove index</a>
+		</li>
+	</ul>
 </div>
 
 <style>
 	html { font: normal 18px/1.3 Georgia, "New York CE", utopia, serif; color: #666; -webkit-text-stroke: 1px rgba(0,0,0,0); overflow-y: scroll; }
-	body { background: #3484d2; color: #333; margin: 2em auto; padding: 0 .5em; max-width: 600px; min-width: 320px; }
+	body { background: #eee; color: #333; margin: 2em auto; padding: 0 .5em; max-width: 600px; min-width: 320px; }
 
 	a { color: #006aeb; padding: 3px 1px; }
 	a:hover, a:active, a:focus { background-color: #006aeb; text-decoration: none; color: white; }
